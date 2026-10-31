@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather2.css">
+</head>
+<body>
+
+    <div class="weather-container">
+
+        <h1>Weather App</h1>
+        <p class="subtitle">Check the weather of any city</p>
+
+        <form id="weather-form">
+            <input
+                type="text"
+                id="city-input"
+                placeholder="Enter city name..."
+                required
+            >
+            <button type="submit" id="search-btn">Search</button>
+        </form>
+
+        <p id="message"></p>
+
+        <div class="weather-card" id="weather-card">
+
+            <h2 id="city-name">London, United Kingdom</h2>
+            <p id="date">Current Weather</p>
+
+            <div class="weather-main">
+                <img id="weather-icon" src="" alt="Weather icon">
+
+                <h1>
+                    <span id="temperature">--</span>°C
+                </h1>
+            </div>
+
+            <h3 id="condition">Weather condition</h3>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>Feels Like</span>
+                    <h3 id="feels-like">--°C</h3>
+                </div>
+
+                <div class="detail">
+                    <span>Humidity</span>
+                    <h3 id="humidity">--%</h3>
+                </div>
+
+                <div class="detail">
+                    <span>Wind Speed</span>
+                    <h3 id="wind">-- km/h</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="weather2.js"></script>
+</body>
+</html>
